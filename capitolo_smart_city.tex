@@ -1,9 +1,9 @@
 \chapter{Contesto smart city}
 \label{cha:smartcity}
 
-Nel seguente capitolo verrà introdotto il concetto di \textit{smart city} con una particolare approfondimento alla \textit{smart mobility}. Ho deciso di presentare questo argomento poiché il bot è considerabile un servizio interno a questo ambito. Inoltre, verranno analizzate le principali applicazioni utilizzate nelle città più smart del mondo. Successivamente farò un'analisi di scalabilità e replicabilità del mio bot cercando di capire cosa si potrebbe implementare in futuro e se è possibile estenderlo per l'utilizzo in altre zone.
+Nel seguente capitolo verrà introdotto il concetto di \textit{smart city} con una particolare approfondimento alla \textit{smart mobility}. Ho deciso di presentare questo argomento poiché il bot è considerabile un servizio interno a questo ambito. Inoltre, verranno analizzate le principali applicazioni utilizzate nelle città più smart del mondo.
 
-Innanzitutto, per \textit{smart city} si intende una città che gestisce le risorse in modo intelligente, che mira a diventare economicamente sostenibile ed energeticamente autosufficiente, ed è attenta alla qualità della vita e ai bisogni dei propri cittadini\cite{SmarCity}.
+Innanzitutto, con il termine \textit{smart city} definiamo una città che gestisce le risorse in modo intelligente, che mira a diventare economicamente sostenibile ed energeticamente autosufficiente, ed è attenta alla qualità della vita e ai bisogni dei propri cittadini\cite{SmarCity}.
 
 \section{Smart mobility}
 \label{sec:smart-mobility}
@@ -18,7 +18,7 @@ La \textit{Smart Mobility} è uno strumento utile ad ottenere lo sviluppo sosten
     \item  \textit{Integrazione}: il tragitto completo viene pianificato integrando tutti i mezzi disponibili;
     \item \textit{Tecnologie pulite}: lo spostamento dai veicoli inquinanti a quelli a zero emissioni;
     \item \textit{Sicurezza}: drastica riduzione di morti e feriti; 
-    \item \textit{Accessibilità}: la \textit{smart mobility} deve poter essere accessibili a tutti, in tutte le sue forme;
+    \item \textit{Accessibilità}: la \textit{smart mobility} deve poter essere accessibile a tutti, in tutte le sue forme;
     \item \textit{Benefici sociali}: la \textit{smart mobility} deve aiutare a migliorare la qualità della vita. 
 \end{enumerate}
 
@@ -41,7 +41,7 @@ Tra i servizi di \textit{smart parking} troviamo, ad esempio, il \textit{“comm
 
 In Olanda, sull’autostrada N205 a Noord-Holland, vicino ad Amsterdam, sono presenti dei semafori in grado di "parlare" in tempo reale, attraverso un'applicazione, con i viaggiatori. Le informazioni fornite riguardano le condizioni del traffico e permettono di dare priorità a determinati gruppi di automobilisti. Inoltre, già a partire dal 2016, sono stati installati, nella città di 's-Hertogenbosch, dei semafori smart in grado di regolare la durata del verde in base alle esigenze del traffico. Quando, ad esempio, i semafori registrano una maggiore affluenza di biciclette, automobili o mezzi di trasporto pubblico prolungano il via libera, così da non creare ingorghi. 
 
-\subsubsection{Mobility As A Service (MaaS)}
+\subsubsection{Mobility as a Service (MaaS)}
 
 \begin{wrapfigure}{r}{0.4\textwidth}
 \centering
@@ -57,7 +57,7 @@ L’Autorità del Trasporto regionale di Helsinki consente l’accesso ai dati r
 \section{Competitor}
 \label{sec:competitor}
 
-Dopo aver approfondito il concetto di \textit{smart mobility} è importante fare un'analisi dei potenziali servizi competitor. Questo permette di stabilire cosa manca nel mercato attuale e conoscere le preferenze degli utenti, oltre a rendere più chiaro in che direzione sarà possibile scalare il bot Telegram.
+Dopo aver approfondito il concetto di \textit{smart mobility} è importante fare un'analisi dei potenziali servizi competitor. Questo permette di stabilire cosa manca nel mercato attuale e conoscere le preferenze degli utenti, oltre a rendere più chiaro in che direzione sarà possibile sviluppare il bot Telegram.
 
 \subsection{Bot telegram}
 Innanzitutto, sono partito ricercando dei bot telegram legati alla mobilità. La ricerca non è stata banale dato che non esiste un sistema centrale, come può essere ad esempio il \textit{Play Store} per le applicazioni mobile Android, che raccoglie e categorizza i bot esistenti e verifica il loro stato. Quindi, i bot sono stati ricercati tramite \textit{Google} e tramite \textit{BotsArchive}, un sito web che tramite segnalazione degli utenti o sviluppatori raccoglie i bot Telegram e permette agli utenti di votare i migliori. Sfortunatamente, molti di questi risultavano offline e non è stato quindi possibile testarli ed inserirli in questo approfondimento, sebbene sembrassero molto validi.
@@ -67,7 +67,7 @@ Innanzitutto, sono partito ricercando dei bot telegram legati alla mobilità. La
 \textit{ViaggiaTrentoBot} supporta la mobilità urbana sostenibile di Trento. Esso permette di consultare gli orari degli autobus urbani di Trento e dei treni delle ferrovie Brennero, Valsugana e Trento-Mezzana. Inoltre, permette di controllare in diretta i posti liberi nei parcheggi e la disponibilità di biciclette nei punti di bike sharing della città. L'interfaccia è abbastanza intuitiva ma, sfortunatamente, è limitato alla sola città di Trento e non fornisce informazioni sulla posizione dei mezzi in tempo reale.
 
 \subsubsection{GTT Orari degli arrrivi in fermata}
-Questo bot consente di conoscere gli arrivi previsti alla fermata dei tram e dei bus urbani e suburbani di Torino e di visualizzare le rivendite autorizzate di biglietti più vicine. Per le ricerche è sufficiente inserire il numero della fermata di interesse riportato sulla fermata, oppure il nome della fermata voluta; a questo punto si riceverà un messaggio con gli orari dei passaggi in tempo reale ed una mappa in cui è mostrata la posizione della fermata e la zona circostante. L'interfaccia di questo bot è confusionaria ed è difficile da utilizzare senza essere guidati.
+Questo bot consente di conoscere gli arrivi previsti alla fermata dei tram e dei bus urbani e suburbani di Torino e di visualizzare le rivendite autorizzate di biglietti più vicine. Per le ricerche è sufficiente inserire il numero o il nome della fermata di interesse; a questo punto si riceverà un messaggio con gli orari dei passaggi in tempo reale ed una mappa in cui è mostrata la posizione della fermata e la zona circostante. L'interfaccia di questo bot è confusionaria ed è difficile da utilizzare senza essere guidati.
 
 \subsubsection{TrenItBot}
 
@@ -104,6 +104,8 @@ Quasi tutti i bot Telegram legati alla mobilità di città non italiane erano of
 
 \subsection{Applicazioni mobile}
 A differenza dei bot Telegram, non è stato difficile trovare applicazioni mobile legate alla \textit{smart mobility} operanti sia nel mondo che in Italia. Nonostante la diffusione di questi progetti a livello locale dia una grande spinta all’adozione di modelli di vita più sostenibili, sfortunatamente, non c’è ancora un servizio che possa essere utilizzato in tutta Italia, indipendentemente dalla regione e dalla città di residenza. Questo pone dei limiti, soprattutto per chi viaggia spesso all’interno dei confini nazionali. Di seguito ho deciso di riportare e descrivere brevemente tre applicazioni attualmente attive nel settore della \textit{smart mobility} che offrono dei servizi originali.
+
+\newpage
 
 \subsubsection{Moovit}
 
@@ -154,34 +156,11 @@ Questa app, meno conosciuta delle precedenti, permette di visualizzare la posizi
 Nonostante l'idea di base sia molto buona, l'interfaccia utente e il design potrebbero essere maggiormente curati. 
 Questo servizio è disponibile solo in due città italiane, Roma e Torino, e in alcune città della Polonia.
 
-\section{Sviluppi futuri @TrentinoInBusBot}
-\label{sec:sviluppi_futuri}
+\subsection{In Trentino}
 
-\begin{wrapfigure}{r}{0.38\textwidth}
-\centering
-\includegraphics[scale=0.2]{TrentinoInBus.jpg}
-\caption{Logo TrentinoInBus}
-\label{fig:trentino_in_bus}
-\end{wrapfigure}
-
-Dopo aver approfondito il concetto di \textit{Smart Mobility} e analizzato alcuni dei migliori servizi sul mercato, ho eseguito un brainstorming su come poter migliorare ed espandere il bot. 
-
-Sicuramente sarebbe interessante orientarsi verso una soluzione \textit{MaaS}, aggiungendo informazioni sui servizi in sharing e di micro-mobilità, e permettendo agli utenti di organizzare i propri spostamenti fornendo varie opzioni. Se ci si orienta verso questa soluzione sarebbe poi necessario implementare un sistema di pagamento direttamente nel bot. Fortunatamente Telegram, tramite le sue \textit{Bot Payments API}, mette a disposizione delle API per ricevere pagamenti per beni e servizi dagli utenti. Telegram e lo sviluppatore del bot non processano nessun pagamento e non accedono a nessuna informazione sensibile, ma fanno affidamento ai più famosi provider di pagamento come \textit{Stripe}.
-
-La funzionalità di monitoraggio dei parcheggi si potrebbe anch'essa migliorare aggiungendo la possibilità di gestire e pagare la sosta direttamente dal bot e permettendo di trovare i parcheggi ottimali in base alla propria destinazione.
-
-\subsection{Scalabilità, replicabilità, problemi e limitazioni}
-\label{sec:scalabilita}
-Dal punto di vista tecnico, il bot, essendo stato sviluppato utilizzando tecnologie fortemente scalabili, non presenterà alcun problema nel caso di un incremento delle funzionalità o degli utenti. Infatti, \textit{NodeJs} fornisce meccanismi di \textit{Load Balancing} e MongoDB permette di essere scalabile sia orizzontalmente, attraverso lo \textit{sharding}, che verticalmente, aggiungendo più CPU e RAM.
-
-
-Il bot Telegram  potrebbe potenzialmente essere replicato ed utilizzato in ogni luogo del mondo facendo dei piccoli adattamenti e integrando le API esterne necessarie al suo funzionamento.
-
-
-I problemi principali, al momento, sono connessi alla ricerca e integrazione di API pubbliche. Risulta necessario trovare delle API che permettano il supporto a più zone, quindi non solo in Trentino, e che forniscano la possibilità di integrare i pagamenti per l'acquisto di biglietti o delle soste. Fortunatamente, le API di \textit{ViaggiaTreno} utilizzate al momento nel bot, in riferimento alle informazioni sulle ferrovie, possono essere estese all'utilizzo sull'intero territorio nazionale. 
-
-Visto il progetto di espandere il servizio, telegram, e in particolare le funzionalità offerte dai bot, potrebbero risultare limitanti andando a rendere anche più difficile l'utilizzo da parte dell'utente. Inoltre, se l'espansione riguarderà i territori coperti dal bot potrebbe risultare utile creare una serie di bot, uno per zona, con tutte le funzionalità. Questo permetterà di mantenere un'interfaccia chiara e non appesantita da troppe azioni per l'utente. 
-
-Infine, il nome del bot, \textit{@TrentinoInBusBot}, risulta essere riduttivo e poco rappresentativo rispetto alle tante funzionalità già presenti. Potrebbe quindi essere utile rinominarlo con un nome più emblematico rispetto alle tante possibilità offerte. 
-
-
+Oltre al bot precedentemente citato, a livello trentino, troviamo altre app legate alla \textit{smart mobility} locale. In particolare: 
+\begin{itemize}
+    \item \textit{Muoversi in Trentino}, che fornisce informazioni georeferenziate in tempo reale sui servizi di trasporto pubblico relativamente a corse/linee, orari, tempi di percorrenza, eventuali ritardi dei mezzi pubblici, funzioni di “trova percorso”, integrazione con i servizi di bike sharing;
+    \item \textit{OpenMove}, permette l'acquisto e la convalida di biglietti singoli, di gruppo o abbonamenti, cercare i percorsi e orari dei mezzi provinciali;
+    \item \textit{trentinotrasporti.it}, sito ufficiale del trasporto pubblico trentino, oltre alla ricerca di percorsi, consultazione degli orari in pdf e di tutte le informazioni necessarie, permette di vedere in tempo reale la posizione dei treni della ferrovia Trento-Mezzana con l'orario di arrivo nelle diverse stazioni. 
+\end{itemize}

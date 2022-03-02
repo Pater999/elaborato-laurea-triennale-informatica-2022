@@ -1,9 +1,37 @@
 \chapter*{Sommario} % senza numerazione
 \label{sommario}
+\addcontentsline{toc}{chapter}{Sommario}
 
-\addcontentsline{toc}{chapter}{Sommario} % da aggiungere comunque all'indice
 
-\textcolor{red}{[TODO]}
+Lo scopo principale di questo elaborato è quello di progettare e implementare un chatbot per la \textit{smart mobility} in Trentino. Questa idea nasce dalla necessità di creare un unico sistema in cui trovare tutte le informazioni utili riguardo ai mezzi di trasporto trentini. Infatti, a livello provinciale esistono una serie di applicazioni con funzionalità diverse, ma tutte ugualmente utili. 
+
+Per affrontare al meglio la progettazione del chatbot, sono stati innanzitutto approfonditi i concetti di \textit{smart city} e \textit{smart mobility}, fondamentali per comprendere al meglio il contesto. I principali competitor analizzati, applicazioni, chatbot e siti web, hanno poi permesso di sviluppare al meglio il bot, valutando i punti di forza e debolezza al fine di creare una buona user experience. 
+Grazie ai corsi svolti durante il percorso accademico è stato possibile svolgere le fasi di analisi e progettazione, utilizzando le metodologie apprese. L'analisi dei requisiti è risultata fondamentale per comprendere quali funzionalità implementare. Infatti, questa ha permesso di estendere il bot anche al monitoraggio di stazioni di bike sharing e parcheggi.  Inoltre, per avere una più chiara visione di comportamenti, abitudini e bisogni del  target di riferimento si è deciso di creare 2 personas e 2 scenari. 
+
+Il bot è stato implementato in \textit{Typescript}, utilizzando il runtime \textit{Node.js}. Per l'integrazione con le API di Telegram è stata utilizzata la libreria \textit{telegraf.js}. Mentre, come database è stato utilizzato \textit{MongoDB} con \textit{Redis} come sistema di caching. Nell'elaborato vengono approfonditi i problemi implementativi riscontrati e come sono stati risolti.
+
+\noindent Le funzionalità implementate nel bot permettono di visualizzare: 
+\begin{itemize}
+\item gli orari di autobus urbani e extraurbani;
+\item gli orari delle ferrovie Brennero, Valsugana e Trento-Mezzana;
+\item una mappa con la posizione di un autobus in tempo reale;
+\item il ritardo e l'ultima posizione conosciuta dei mezzi;
+\item il numero di posti liberi nei parcheggi dei comuni di Trento e Rovereto;
+\item la disponibilità di bici presenti nelle stazioni del bike sharing;
+\item le fermate e linee preferite precedentemente salvate;
+\item informazioni su eventuali scioperi, variazioni di percorso, fermate sospese.
+\end{itemize}
+
+L'applicativo \textit{Node.JS} è hostato su una \textit{VPS Ubuntu} ed è presente un sistema di continuous deployment utilizzando le Github Actions e il process manager \textit{PM2}.
+
+In seguito all'implementazione sono stati svolti alcuni \textit{usability testing} per comprenderne i bisogni e capire le difficoltà che incontrano gli utenti durante l'utilizzo del bot. Questo è risultato intuitivo e sono emersi alcuni bisogni che non erano stati presi in considerazione durante l'analisi dei requisiti o che avevano ricevuto una priorità minore nella fase di implementazione. Tra questi troviamo la possibilità di ricercare la stazione di ricarica più vicina alla propria posizione,  l’inserimento della possibilità di acquisto di biglietti per il servizio di trasporti provinciale e la ricerca dei percorsi data una partenza e una destinazione. 
+
+L'elaborato si conclude con uno studio di scalabilità e replicabilità dove, tenendo conto dei competitor analizzati e dei bisogni degli utenti emersi durante usability testing, vengono presentati gli sviluppi futuri.
+
+Tutte le fasi necessarie alla realizzazione di una prima versione funzionante del bot sono state eseguite. Al momento attuale il bot risulta funzionante, è presente su Telegram con il nome \textit{@TrentinoInBusBot} e dalla sua pubblicazione è stato utilizzato da circa 500 utenti. 
+
+
+
 
 %  Sommario è un breve riassunto del lavoro svolto dove si descrive l'obiettivo, l'oggetto della tesi, le 
 %metodologie e le tecniche usate, i dati elaborati e la spiegazione delle conclusioni alle quali siete arrivati.  
